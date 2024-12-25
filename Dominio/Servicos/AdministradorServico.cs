@@ -13,6 +13,33 @@ namespace minimal_api.Dominio.Servicos
             _db = db;
         }
 
+        public Administrador Incluir(Administrador administrador)
+        {
+            _db.Administradores.Add(administrador);
+            _db.SaveChanges();
+
+            return administrador;
+        }
+
+        public Administrador BuscaPorId(int id)
+        {
+            return _db.Administradores.Where(v => v.Id == id).FirstOrDefault();
+        }
+
+        public List<Administrador> Todos(int? pagina)
+        {
+            var query = _db.Administradores.AsQueryable();
+
+            int itensPorPagina = 10;
+
+            if(pagina != null)
+            {
+                query = query.Skip(((int)pagina - 1) * itensPorPagina).Take(itensPorPagina);
+            }
+
+            return query.ToList();
+        }
+
         public Administrador Login(LoginDTO loginDTO)
         {
             var adm = _db.Administradores.Where(a => a.Email == loginDTO.Email && a.Senha == loginDTO.Senha).FirstOrDefault();
