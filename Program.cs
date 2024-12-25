@@ -90,6 +90,17 @@ app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeicul
     return Results.Ok(veiculos);
 
 }).WithTags("Veiculos");
+
+app.MapDelete("/veiculos/{id}", ([FromRoute] int id, IVeiculoServico veiculoServico) =>
+{
+    var veiculos = veiculoServico.BuscaPorId(id);
+    if(veiculos == null) return Results.NotFound();
+
+    veiculoServico.Apagar(veiculos);
+
+    return Results.NoContent();
+
+}).WithTags("Veiculos");
 #endregion
 
 app.Run();
