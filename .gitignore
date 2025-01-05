@@ -3,6 +3,8 @@
 
 .vs/
 
+/TestResults/
+
 ### DotnetCore ###
 # .NET Core build folders
 bin/
