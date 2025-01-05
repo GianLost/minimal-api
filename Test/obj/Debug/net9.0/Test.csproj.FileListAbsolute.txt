@@ -2,11 +2,11 @@ D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Pratica
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\testhost.dll
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\minimal-api.deps.json
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\minimal-api.runtimeconfig.json
-D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\appsettings.Development.json
-D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\appsettings.json
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\minimal-api.staticwebassets.endpoints.json
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\minimal-api.exe
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\testhost.exe
+D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\appsettings.Development.json
+D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\appsettings.json
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 D:\docs\OneDrive\WORKSPACE\ESTUDOS\DIO - DIGITAL INNOVATION ONE\C#\Aulas Praticas\ASP.NET Minimal APIs\minimal-api\Test\bin\Debug\net9.0\Microsoft.TestPlatform.AdapterUtilities.dll
