@@ -8,15 +8,13 @@ using minimal_api.Infraestrutura.Db;
 namespace Test.Domain.Servicos
 {
     [TestClass]
+    [DoNotParallelize]
     public class AdministradorServicoTest
     {
         private static DbContexto CriarContextoDeTest()
         {
-            var assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            var path = Path.GetFullPath(Path.Combine(assemblyPath ?? "", "..", "..", ".."));
-
             var builder = new ConfigurationBuilder()
-                .SetBasePath(path ?? Directory.GetCurrentDirectory())
+                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddEnvironmentVariables();
 
@@ -53,7 +51,6 @@ namespace Test.Domain.Servicos
         {
             // Arrange
             var context = CriarContextoDeTest();
-            context.Database.ExecuteSqlRaw("TRUNCATE TABLE Administradores");
 
             var adm = new Administrador
             {
