@@ -1,4 +1,3 @@
-using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using minimal_api.Dominio.Entidades;
@@ -8,7 +7,6 @@ using minimal_api.Infraestrutura.Db;
 namespace Test.Domain.Servicos
 {
     [TestClass]
-    [DoNotParallelize]
     public class AdministradorServicoTest
     {
         private static DbContexto CriarContextoDeTest()
@@ -28,7 +26,7 @@ namespace Test.Domain.Servicos
         {
             // Arrange
             var context = CriarContextoDeTest();
-            context.Database.ExecuteSqlRaw("TRUNCATE TABLE Administradores");
+            context.Database.ExecuteSqlRaw("TRUNCATE TABLE Administradores; ALTER TABLE Administradores AUTO_INCREMENT = 1;");
 
             var adm = new Administrador
             {
@@ -51,6 +49,7 @@ namespace Test.Domain.Servicos
         {
             // Arrange
             var context = CriarContextoDeTest();
+            context.Database.ExecuteSqlRaw("TRUNCATE TABLE Administradores; ALTER TABLE Administradores AUTO_INCREMENT = 1;");
 
             var adm = new Administrador
             {
@@ -63,6 +62,7 @@ namespace Test.Domain.Servicos
             var administradorServico = new AdministradorServico(context);
 
             // Act
+            administradorServico.Incluir(adm);
             var admDoBanco = administradorServico.BuscaPorId(adm.Id);
 
             // Assert
