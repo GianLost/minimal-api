@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using minimal_api.Dominio.Entidades;
 using minimal_api.Dominio.Servicos;
 using minimal_api.Infraestrutura.Db;
@@ -39,7 +34,6 @@ namespace Test.Domain.Servicos
 
             var adm = new Administrador
             {
-                Id = 1,
                 Email = "teste@teste.com",
                 Senha = "123456",
                 Perfil = "Adm",
